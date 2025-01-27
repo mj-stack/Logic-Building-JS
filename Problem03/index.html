@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logic Building JS - 03</title>
+</head>
+<body>
+  <!-- Write a function that calculates and prints the area of a rectangle given its lengths and width -->
+
+  <script>
+    function calculateArea(length, width) {
+      if (length <= 0 || width <= 0) {
+        console.log(`Given length: ${length} and width: ${width}. Length/width can't be zero or negative. Hence area can't be calculated.`);
+      } else {
+        const area = length * width;
+        console.log(`The area of rectangle would be ${area}sq units if the length = ${length} and width is ${width}`);
+      }
+    }
+
+    calculateArea(10, 50);
+    calculateArea(0, 50);
+    calculateArea(18, 30);
+    calculateArea(20, 0);
+    calculateArea(20, -8);
+    calculateArea(20, 80);
+  </script>
+</body>
+</html>
