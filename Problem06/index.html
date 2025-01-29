@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logic Building JS - 06</title>
+</head>
+<body>
+  <!-- Write a function that returns a reverse of a string -->
+
+  <script>
+    function reverseString(string) {
+      return string.split('').reverse().join('');
+    }
+    console.log(reverseString('Mukul'));
+    console.log(reverseString('Mukul Joshi'));
+    console.log(reverseString('Software Development'));
+    
+    // One with forloop
+    
+    function reverseString2(string) {
+      let reversedArray = '';
+      for (let i = string.length - 1; i >= 0; i--) {
+        // reversedArray = reversedArray + string[i];
+        reversedArray += string[i]
+      }
+      return reversedArray;
+    }
+    console.log(reverseString2('Mukul'));
+    console.log(reverseString('Mukul Joshi'));
+    console.log(reverseString('Software Development'));
+  </script>
+</body>
+</html>
