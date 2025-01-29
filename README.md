@@ -1,4 +1,7 @@
+## About This Repo
+
 🚀 JavaScript Logic & Problem Solving
+
 Welcome to my JavaScript Logic Building repository! 🎯💡 Here, I solve JavaScript problems from basic to advanced levels to sharpen my problem-solving skills, enhance logical thinking, and master the language.
 
 📌 What's Inside?
