@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logic Building JS - 07</title>
+</head>
+<body>
+  <!-- Write a function that calculate factorial of a given number -->
+
+  <script>
+    function calculateFactorial(number) {
+      let result = 1;
+      if ((number < 0) || !(typeof number === "number")) {
+        console.log('Input number cant be less than zero or a string');        
+      } else {
+        for (i = 1; i <= number; i++) {
+          result *= i;
+        }
+        return result;
+      }
+    }
+
+    console.log(calculateFactorial(2));
+    console.log(calculateFactorial(3));
+    console.log(calculateFactorial(4));
+    console.log(calculateFactorial(0));
+    console.log(calculateFactorial(1));
+    console.log(calculateFactorial(-1));
+    console.log(calculateFactorial('Mukul'));
+  </script>
+</body>
+</html>
