@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logic Building JS - 07</title>
+</head>
+<body>
+  <!-- Write a function that tells if provided year is a leap year or not -->
+
+  <script>
+    // We can solve this problem in following ways:
+
+    // 1st way
+    function isLeapYear(year) {
+      if (year%4 === 0) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    console.log(isLeapYear(2004));
+    console.log(isLeapYear(2024));
+    console.log(isLeapYear(2023));
+
+    // 2nd way
+    function isLeapYear2(year) {
+      if (year%4 === 0) {
+        return true;
+      } 
+      
+      return false;
+    }
+
+    console.log(isLeapYear2(2004));
+    console.log(isLeapYear2(2024));
+    console.log(isLeapYear2(2023));
+
+    // 3rd way
+    function isLeapYear3(year) {
+      const leapYear = (year%4 === 0) ? true : false;
+
+      return leapYear;
+    }
+
+    console.log(isLeapYear3(2004));
+    console.log(isLeapYear3(2024));
+    console.log(isLeapYear3(2023));
+
+    // 4th way
+    function isLeapYear4(year) {
+      return year%4 === 0;
+    }
+
+    console.log(isLeapYear4(2004));
+    console.log(isLeapYear4(2024));
+    console.log(isLeapYear4(2023));
+  </script>
+</body>
+</html>
