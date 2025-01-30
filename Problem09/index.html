@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logic Building JS - 08</title>
+</head>
+<body>
+  <!-- Write a function that calculates and prints the sum of the digits of a given number -->
+
+  <script>
+    function calculateSum(number) {
+      if (number < 1) {
+        console.log("Input number can't be less that ot equal to zero");
+        return number;
+      } else if (Number.isInteger(number) === false) {
+        console.log("Input number can't be a decimal number");
+        return number;
+      }
+
+      let string = String(number);
+      let spilttedString = string.split('');
+      let sum = 0;
+      spilttedString.forEach((num) => {
+        sum += Number(num);
+      });
+
+      return sum;
+    }
+
+    console.log(calculateSum(12));
+    console.log(calculateSum(-12));
+    console.log(calculateSum(12.5));
+    console.log(calculateSum(456));
+    console.log(calculateSum(599));
+  </script>
+</body>
+</html>
