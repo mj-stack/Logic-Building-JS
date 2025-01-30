@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logic Building JS - 10</title>
+</head>
+<body>
+  <!-- Write a function that generates and prints a multiplication table for a given number up to a specified -->
+
+  <script>
+    function generateTable(tableOf, tableTill) {
+      if (tableOf <= 0 || tableTill <= 0) {
+        console.log("Input number can't be less than or equal to zero.");
+        return;
+      } else if ((Number.isInteger(tableOf) === false) || (Number.isInteger(tableTill) === false)) {
+        console.log("Input number can't be a decimal number.");
+        return;
+      }
+
+      for (i = 1; i <= tableTill; i++) {
+        console.log(`${tableOf} x ${i} = ${tableOf * i}`);
+      }
+    }
+
+    generateTable(19, 10);
+    generateTable(19, 0);
+    generateTable(-19, 10);
+    generateTable(1.9, 10);
+    generateTable(19, 10.9);
+  </script>
+</body>
+</html>
