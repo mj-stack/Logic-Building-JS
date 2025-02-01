@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logic Building JS - 14</title>
+</head>
+<body>
+  <!-- Write a function that counts and prints the number of vowles and consonants in a given string -->
+
+  <script>
+    function countVowels(string) {
+      let vowles = 0;
+      let consonants = 0;
+      let emptyString = 0;
+      string = string.toLowerCase();
+      for (let i = 0; i < string.length; i++) {
+        const char = string[i];
+        if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+          vowles++;
+        } else if (char === " ") {
+          emptyString++;
+        } else {
+          consonants++
+        }
+      }
+
+      return { vowles , consonants };
+    }
+
+    console.log(countVowels('Mukul Joshi Joshi'));
+    console.log(countVowels('Hello World'));
+  </script>
+</body>
+</html>
