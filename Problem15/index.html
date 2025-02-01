@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logic Building JS - 15</title>
+</head>
+<body>
+  <!-- Write a function that finds all the factors of a given number -->
+  
+  <script>
+    function checkFactors(number) {
+      const factorsArray = [];
+      for (let i = 1; i <= number; i++) {
+        if (number%i === 0) {
+          factorsArray.push(i);
+        }
+      }
+
+      return `${number}: ${factorsArray}`;
+    }
+
+    console.log(checkFactors(25));
+    console.log(checkFactors(1));
+    console.log(checkFactors(2));
+    console.log(checkFactors(4));
+    console.log(checkFactors(8));
+    console.log(checkFactors(12));
+  </script>
+</body>
+</html>
