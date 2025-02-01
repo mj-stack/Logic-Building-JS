@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logic Building JS - 12</title>
+</head>
+<body>
+  <!-- Write a function that returns the result of raising a given to a specified power -->
+
+  <script>
+    // One way
+    function calculateExponent(base, power) {
+      let result;
+      result = base ** power;
+
+      return result;
+    }
+
+    console.log(calculateExponent(2, 3));
+
+    // Another way
+    function calculateExponent2(base, power) {
+      let result = 1;
+      for (let i = 1; i <= power; i++) {
+        result *= base;
+      }
+
+      return result;
+    }
+
+    console.log(calculateExponent2(2, 3));
+  </script>
+</body>
+</html>
