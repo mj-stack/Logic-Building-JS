@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logic Building JS - 12</title>
+</head>
+<body>
+  <!-- Write a function that checks if a string is plaindrome oor not -->
+
+  <script>
+    function isPalindrome(string) {
+
+      if (!(typeof string === "string")) {
+        console.log('Input value can only be string');
+        return `Your input value was ${string}`
+      } else {
+        let correctString = string;
+        let reversedString = String(string).split('').reverse().join('');
+  
+        if (correctString === reversedString) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      
+    }
+
+    console.log(isPalindrome('tattarrattat'));
+    console.log(isPalindrome('madam'));
+    console.log(isPalindrome(12));
+  </script>
+</body>
+</html>
