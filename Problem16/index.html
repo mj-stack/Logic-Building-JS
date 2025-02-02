@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logic Building JS - 16</title>
+</head>
+<body>
+  <!-- Write a function that calculates and resturns the average of a set of numbers. -->
+
+  <script>
+    function calculateAvg(array) {
+
+      if (Array.isArray(array)) {
+        
+        let sum = 0;
+        let totalNum = array.length;
+        let avg;
+  
+        for (let i = 0; i < array.length; i++) {
+          sum += array[i];
+          avg = sum/totalNum;
+        }
+  
+        return avg;
+      } else {
+        return `Only arrays are allowed`; 
+      }
+    }
+
+    console.log(calculateAvg([1, 2, 4]));
+    console.log(calculateAvg([1, 2, 7, 14]));
+    console.log(calculateAvg([1, 5, 7, 35]));
+    console.log(calculateAvg(1));
+    console.log(calculateAvg('MJ'));
+  </script>
+</body>
+</html>
