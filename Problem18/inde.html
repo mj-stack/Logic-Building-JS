@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logic Building JS - 18</title>
+</head>
+<body>
+  <!-- Write a function that tells  if the given number is prime or not-->
+
+  <script>
+    function isPrime(number) {
+      let totalFactors = 0;
+      for (let i = 1; i <= number; i++) {
+        if (number%i === 0) {
+          totalFactors++;
+        }
+      }
+
+      if (totalFactors <= 2) {
+        return true;
+      }
+      return false;
+    }
+
+    console.log(isPrime(4));
+    console.log(isPrime(7));
+  </script>
+</body>
+</html>
