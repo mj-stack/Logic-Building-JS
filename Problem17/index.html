@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logic Building JS - 17</title>
+</head>
+<body>
+  <!-- Write a function that calculates and prints the simple interest on a loan amount -->
+
+  <script>
+
+    /*
+      pi - principal amount
+      ir - interest rate
+      td - time duration
+    */
+
+    function calculateSimpleInterest(pi, ir, td) {
+      
+      if((typeof pi === "number") && (typeof ir === "number") && (typeof td == "number")) {
+        let SI;
+        SI = ((pi * ir * td) / 100);
+        return Math.round(SI.toFixed(2));        
+      }
+
+      else {
+        return `Input shoud be a number`;
+      }
+
+    }
+
+    console.log(calculateSimpleInterest(2000000, 10, 20));
+    console.log(calculateSimpleInterest(1000, 5, 1));
+    console.log(calculateSimpleInterest(2000000, 10, 'mj'));
+    console.log(calculateSimpleInterest(20000, 10, 5));
+    console.log(calculateSimpleInterest(20000, 8.755, 5));
+
+  </script>
+</body>
+</html>
