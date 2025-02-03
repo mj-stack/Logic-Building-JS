@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logic Building JS - 20</title>
+</head>
+<body>
+  <!-- Write a program that swap two numbers -->
+
+  <script>
+    // One way
+    
+    function swapNumbers(a, b) {
+      let c;
+      c = a;
+      a = b;
+      b = c;
+
+      return `${a} and ${b}`;
+    }
+
+    console.log(swapNumbers(1, 2));
+    console.log(swapNumbers(5, 7));
+
+    // Another way
+
+    function swapNumbers2(a, b) {
+      a = a + b;
+      b = a - b;
+      a = a - b;
+
+      return `${a} and ${b}`;
+    }
+
+    console.log(swapNumbers2(1, 2));
+    console.log(swapNumbers2(5, 7));
+  </script>
+</body>
+</html>
