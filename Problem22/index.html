@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logic Building JS - 22</title>
+</head>
+<body>
+  <!-- Write a program that checks if a number is Armsrong or not -->
+
+  <script>
+    function isArmstrong(number) {
+      let inputNumber = number;
+      const digits = [];
+
+      while (number > 0) {
+        let lastDigit = number % 10;
+        number = Math.floor(number / 10);
+        digits.push(lastDigit);
+      }
+
+      const length = digits.length;
+
+      let sum = 0;
+      digits.forEach((num) => {
+        sum += Math.pow(num, length);
+      });
+
+      return sum === inputNumber;
+    }
+
+    console.log(isArmstrong(153));
+    console.log(isArmstrong(564));
+  </script>
+</body>
+</html>
