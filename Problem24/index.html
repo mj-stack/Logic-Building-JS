@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logic Building JS - 23</title>
+</head>
+<body>
+  <!-- Write a program that prints a number pyramid -->
+  
+  <script>
+    function printPyramid(number) {      
+
+      for (let i = 1; i <= number; i++) {
+        let lineContent = "";
+        for (let space = 1; space <= number - i; space++) {
+          lineContent = lineContent + " ";
+        }
+        for (let count = 1; count <= i; count++) {
+          lineContent = lineContent + count;
+        }
+        for (let reversedCount = i - 1; reversedCount >= 1; reversedCount--) {
+          lineContent = lineContent + reversedCount
+        }
+        console.log(lineContent);
+      }
+
+    }
+
+    printPyramid(9);
+  </script>
+</body>
+</html>
